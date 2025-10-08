@@ -38,7 +38,7 @@ class DVD:
 if __name__ == "__main__":
     # store DVDs in an array (list in python)
     dvds = [
-        DVD(f"movie{i}", random.randint(1995, 2005), f"direcrtor{i}")
+        DVD(f"movie{i}", random.randint(1995, 2005), f"director{i}")
         for i in range(1, 11)
     ]
 
