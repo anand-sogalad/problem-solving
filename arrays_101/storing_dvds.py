@@ -49,3 +49,9 @@ if __name__ == "__main__":
     # iterating through array using index
     for idx in range(len(dvds)):
         print(dvds[idx])
+
+    # iterating through array using index but using while loop
+    idx = 0
+    while idx < len(dvds):
+        print(dvds[idx])
+        idx += 1
