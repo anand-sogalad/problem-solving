@@ -45,3 +45,7 @@ if __name__ == "__main__":
     # iterate through each dvds
     for dvd in dvds:
         print(dvd)
+
+    # iterating through array using index
+    for idx in range(len(dvds)):
+        print(dvds[idx])
