@@ -1,6 +1,3 @@
-import random
-
-
 class DVD:
     def __init__(self, movie: str, year: int, director: str):
         self.movie = movie
@@ -33,25 +30,3 @@ class DVD:
     @director.setter
     def director(self, director: str):
         self.__director = director
-
-
-if __name__ == "__main__":
-    # store DVDs in an array (list in python)
-    dvds = [
-        DVD(f"movie{i}", random.randint(1995, 2005), f"director{i}")
-        for i in range(1, 11)
-    ]
-
-    # iterate through each dvds
-    for dvd in dvds:
-        print(dvd)
-
-    # iterating through array using index
-    for idx in range(len(dvds)):
-        print(dvds[idx])
-
-    # iterating through array using index but using while loop
-    idx = 0
-    while idx < len(dvds):
-        print(dvds[idx])
-        idx += 1
