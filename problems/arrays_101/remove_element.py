@@ -2,8 +2,6 @@
 Remove Element
 """
 
-from operator import le
-
 
 class Solution:
     def removeElement(self, nums: list[int], val: int) -> int:
@@ -11,6 +9,16 @@ class Solution:
             if nums[i] == val:
                 del nums[i]
         return len(nums)
+
+
+class Solution:
+    def removeElement(self, nums: list[int], val: int):
+        write_index = 0
+        for read_index in range(len(nums)):
+            if nums[read_index] != val:
+                nums[write_index] = nums[read_index]
+                write_index += 1
+        return write_index
 
 
 if __name__ == "__main__":
