@@ -1,6 +1,3 @@
-from array import ArrayType
-
-
 class Solution:
     def valid_mountain(self, nums: list[int]):
         middle = nums.index(max(nums))
