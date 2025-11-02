@@ -1,4 +1,5 @@
 class Solution:
+    # single pass liner scan with state tracking pattern
     def numbers_with_even_digits(self, nums: list[int]) -> int:
         result = 0
         for num in nums:
