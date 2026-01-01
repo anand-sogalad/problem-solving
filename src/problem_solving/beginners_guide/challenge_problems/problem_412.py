@@ -16,10 +16,3 @@ class Solution:
             else:
                 nums.append(str(i))
         return nums
-
-
-if __name__ == "__main__":
-    test_data: int = 15
-
-    result = Solution.fizz_buzz(test_data)
-    print(result)

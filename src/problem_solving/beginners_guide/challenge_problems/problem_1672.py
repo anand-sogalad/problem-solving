@@ -22,15 +22,3 @@ class Solution:
     @staticmethod
     def richest_customer_wealth_improved1(wealth: list[list[int]]) -> int:
         return max(map(sum, wealth))
-
-
-if __name__ == "__main__":
-    test_data = [[7, 1, 3], [2, 8, 7], [1, 9, 5]]
-    result = Solution.richest_customer_wealth(test_data)
-    print(f"result: {result}")
-
-    result = Solution.richest_customer_wealth_improved(test_data)
-    print(f"result: {result}")
-
-    result = Solution.richest_customer_wealth_improved1(test_data)
-    print(f"result: {result}")

@@ -20,15 +20,3 @@ class Solution:
             nums[i] += nums[i - 1]
 
         return nums
-
-
-if __name__ == "__main__":
-    test_data: list[int] = [3, 1, 2, 10, 1]
-
-    # this return the new list
-    result = Solution.running_sum(test_data)
-    print(f"result: {result}")
-
-    # this returns the modified list
-    result = Solution.running_sum_inplace(test_data)
-    print(f"result: {result}")
