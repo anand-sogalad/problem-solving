@@ -16,12 +16,12 @@ class Solution:
     @timer
     @staticmethod
     def richest_customer_wealth_improved(wealth: list[list[int]]) -> int:
-        return max(sum(i) for i in wealth)
+        return max((sum(i) for i in wealth), default=0)
 
     @timer
     @staticmethod
     def richest_customer_wealth_improved1(wealth: list[list[int]]) -> int:
-        return max(sum(i) for i in wealth)
+        return max(map(sum, wealth))
 
 
 if __name__ == "__main__":
