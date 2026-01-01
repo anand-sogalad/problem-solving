@@ -15,13 +15,13 @@ Common `uv` workflows
 uv add --dev pytest ruff pre-commit
 ```
 
-2. Install the project in editable mode (so `src/` is importable):
+1. Install the project in editable mode (so `src/` is importable):
 
 ```bash
 uv run python -m pip install -e .
 ```
 
-3. Run tests inside the `uv` environment:
+1. Run tests inside the `uv` environment:
 
 ```bash
 uv run pytest
