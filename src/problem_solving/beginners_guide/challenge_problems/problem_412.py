@@ -1,4 +1,4 @@
-from problem_solving.beginners_guide.decorators.preformance import timer
+from problem_solving.decorators.preformance import timer
 
 
 class Solution:
