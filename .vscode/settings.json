@@ -16,12 +16,25 @@
 
   // disable inline suggestions
   "editor.inlineSuggest.enabled": false,
-  "editor.suggestOnTriggerCharacters": false,
   "editor.acceptSuggestionOnEnter": "off",
   "editor.tabCompletion": "off",
   // to make visual difference
   "workbench.colorCustomizations": {
     "statusBar.background": "#000000",
     "statusBar.foreground": "#ffffff"
+  },
+  // hide common cache folders from explorer and search
+  "files.exclude": {
+    "**/__pycache__": true,
+    "**/.pytest_cache": true,
+    "**/*.pyc": true
+  },
+  "search.exclude": {
+    "**/__pycache__": true,
+    "**/.pytest_cache": true
+  },
+  "files.watcherExclude": {
+    "**/__pycache__": true,
+    "**/.pytest_cache": true
   }
 }
